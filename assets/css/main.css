@@ -44,6 +44,7 @@ ul {
 
 h1 {
     font-size: 2.715rem;
+    line-height: 100%;
     font-weight: 700;
     color: var(--secondary);
 }
@@ -66,7 +67,7 @@ h2 {
     color: var(--menu);
     background: var(--secondary);
     padding: 20px 16px;
-    border-bottom: 1px solid var(-border);
+    border-bottom: 1px solid var(--border);
 }
 
 .logo {
@@ -111,7 +112,6 @@ h2 {
     left: 0;
     width: 100%;
     padding: 20px 16px;
-    margin-bottom: 1px solid var(--border);
 }
 
 .nav-list {
@@ -132,6 +132,70 @@ h2 {
 
 .nav-link.active {
     color: var(--primary);
+}
+
+/** MAIN **/
+
+main {
+    margin-top: 74px;
+}
+
+.section {
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-img > img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.hero-description {
+    padding: 20px 16px;
+    text-align: center;
+}
+
+.hero-description > .intro {
+    font-size: 1.285rem;
+    font-weight: 600;
+    color: var(--secondary);
+    display: inline-block;
+    border-bottom: 3px solid var(--primary);
+    padding: 5px;
+}
+
+.hero-description > h1 {
+    margin-top: 10px;
+}
+
+.hero-description > p {
+    margin-top: 16px;
+}
+
+.btn-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.btn-primary {
+    display: block;
+    padding: 14px 16px;
+    background: var(--primary);
+    color: var(--heading);
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.btn-primary-outline {
+    background: var(--border);
+    border: 1px solid var(--primary);
 }
 
 @media screen and (min-width: 1024px) {
@@ -197,6 +261,66 @@ h2 {
     .nav-link.contact-nav:hover {
         opacity: 0.8;
     }
+ /** MAIN **/
+
+main {
+    margin-top: 91px;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-description {
+    padding: 50px 30px;
+    text-align: left;
+}
+
+.hero-description > h1 {
+    margin-top: 14px;
+}
+
+.hero-description > p {
+    margin-top: 20px;
+}
+
+.btn-group {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+.btn-primary {
+    display: block;
+    padding: 14px 16px;
+    background: var(--primary);
+    color: var(--heading);
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.btn-primary-outline {
+    background: var(--border);
+    border: 1px solid var(--primary);
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .hero-description {
+        padding: 120px 80px 120px 40px;
+    }
+    
+    .hero-description > p {
+        margin-top: 16px;
+    }
+    
 }
 
 @media screen and (min-width: 1920px) {
@@ -227,6 +351,24 @@ h2 {
         padding: 14px 24px;
         border-radius: 8px;
         margin-left: 40px;
+    }
+
+    /** MAIN **/
+    .hero-description {
+        padding: 125px 162px 125px 50px;
+    }
+    
+    .hero-description > p {
+        margin-top: 20px;
+    }
+    
+    .btn-group {
+        margin-top: 50px;
+    }
+    
+    .btn-primary {
+        padding: 16px 20px;
+        border-radius: 8px;
     }
     
 }
