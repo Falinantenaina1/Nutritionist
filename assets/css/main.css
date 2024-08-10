@@ -221,6 +221,7 @@ section:not(.hero-section) {
     background: var(--bg-primary);
     border: 1px solid var(--border);
     border-radius: 10px;
+    margin-top: 20px;
     padding: 30px;
 }
 
@@ -230,9 +231,6 @@ section:not(.hero-section) {
     font-weight: 600;
 }
 
-.features-item {
-    margin-top: 20px;
-}
 
 .features-title::before {
     content: "";
@@ -503,6 +501,66 @@ section:not(.hero-section) {
     .btn-primary {
         padding: 16px 20px;
         border-radius: 8px;
+    }
+
+    section:not(.hero-section) {
+        padding: 40px 162px;
+    }
+    
+    .section-description {
+        margin-top: 8px;
+    }
+    
+    .features-container {
+        margin-top: 80px;
+        gap: 30px;
+    }
+    
+     .features-item {
+        width: calc(50% - 15px);
+    }
+    
+    .features-title {
+        font-size: 1.325rem;
+    }
+    
+    .features-title::before {
+        width: 68px;
+        height: 68px;
+        margin-right: 12px;
+    }
+    
+    .features-title.flower::before {
+        background: var(--primary) center / 40px 40px no-repeat url(../icons/flower.svg);
+    }
+    
+    .features-title.graduationcap::before {
+        background: var(--primary) center / 40px 40px no-repeat url(../icons/graduationcap.svg);
+    }
+    
+    .features-title.fork-knife::before {
+        background: var(--primary) center / 40px 40px no-repeat url(../icons/fork-knife.svg);
+    }
+    
+    .features-title.wallet-pass::before {
+        background: var(--primary) center / 40px 40px no-repeat url(../icons/wallet-pass.svg);
+    }
+    
+    .features-title.dumbbell::before {
+        background: var(--primary) center / 40px 40px no-repeat url(../icons/dumbbell.svg);
+    }
+    
+    .features-title.backpack::before {
+        background: var(--primary) center / 40px 40px no-repeat url(../icons/backpack.svg);
+    }
+
+    .features-item {
+        border-radius: 12px;
+        padding: 50px;
+    }
+    
+    .features-item > p {
+        margin-top: 24px;
     }
     
 }
