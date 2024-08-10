@@ -134,7 +134,7 @@ h2 {
     color: var(--primary);
 }
 
-/** MAIN **/
+/** HERO SECTION **/
 
 main {
     margin-top: 74px;
@@ -193,9 +193,86 @@ main {
     border-radius: 6px;
 }
 
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
 .btn-primary-outline {
     background: var(--border);
     border: 1px solid var(--primary);
+}
+
+/* FEATURES */
+section:not(.hero-section) {
+    padding: 25px 16px;
+}
+
+.section-title {
+    font-size: 2rem;
+    line-height: 150%;
+    font-weight: 700;
+    text-align: center;
+    color: var(--heading);
+}
+
+.section-description {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.features-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.features-title {
+    font-size: 1.285rem;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.features-item {
+    margin-top: 20px;
+}
+
+.features-title::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    border-radius: 6px;
+    margin-right: 10.5px;
+}
+
+.features-title.flower::before {
+    background: var(--primary) center / 24px 24px no-repeat url(../icons/flower.svg);
+}
+
+.features-title.graduationcap::before {
+    background: var(--primary) center / 24px 24px no-repeat url(../icons/graduationcap.svg);
+}
+
+.features-title.fork-knife::before {
+    background: var(--primary) center / 24px 24px no-repeat url(../icons/fork-knife.svg);
+}
+
+.features-title.wallet-pass::before {
+    background: var(--primary) center / 24px 24px no-repeat url(../icons/wallet-pass.svg);
+}
+
+.features-title.dumbbell::before {
+    background: var(--primary) center / 24px 24px no-repeat url(../icons/dumbbell.svg);
+}
+
+.features-title.backpack::before {
+    background: var(--primary) center / 24px 24px no-repeat url(../icons/backpack.svg);
+}
+
+.features-item > p {
+    margin-top: 16px;
 }
 
 @media screen and (min-width: 1024px) {
