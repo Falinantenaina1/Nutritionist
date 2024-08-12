@@ -55,6 +55,11 @@ h2 {
     color: var(--heading);
 }
 
+h3 {
+    font-weight: 600;
+    color: var(--heading);
+}
+
 /** NAVIGATION **/
 
 .header {
@@ -184,6 +189,7 @@ main {
 }
 
 .btn-primary {
+    text-align: center;
     display: block;
     padding: 14px 16px;
     background: var(--primary);
@@ -213,6 +219,7 @@ section:not(.hero-section) {
 }
 
 .section-description {
+    margin: auto;
     margin-top: 6px;
     text-align: center;
 }
@@ -228,7 +235,6 @@ section:not(.hero-section) {
 .features-title {
     font-size: 1.285rem;
     line-height: 150%;
-    font-weight: 600;
 }
 
 
@@ -379,6 +385,41 @@ section:not(.hero-section) {
     color: var(--secondary);
 }
 
+/**PRICING**/
+
+.pricing {
+    background: var(--bg-primary);
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+}
+
+.pricing-text {
+    color: var(--heading);
+    margin-top: 24px;
+}
+
+.pricing-price {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-price > span {
+    font-size: 2.85rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.pricing-btn {
+    margin-top: 24px;
+}
+
 @media screen and (min-width: 1024px) {
     html {
         font-size: 16px;
@@ -500,6 +541,7 @@ section:not(.hero-section) {
 .section-description {
     margin-top: 6px;
     text-align: center;
+    max-width: 780px;
 }
 
 .card-group {
@@ -603,6 +645,30 @@ section:not(.hero-section) {
     font-size: 1rem;
 }
 
+/**PRICING**/
+
+.pricing {
+    margin-top: 0px;
+    padding: 40px;
+    width: calc(33% - 14px)
+}
+
+.pricing-text {
+    margin-top: 30px;
+}
+
+.pricing-price {
+    margin-top: 30px;
+}
+
+.pricing-price > span {
+    font-size: 2.5rem;
+}
+
+.pricing-btn {
+    margin-top: 24px;
+}
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -695,6 +761,7 @@ section:not(.hero-section) {
     
     .section-description {
         margin-top: 8px;
+        max-width: 996px;
     }
     
     .features-container {
@@ -748,6 +815,55 @@ section:not(.hero-section) {
     .features-item > p {
         margin-top: 24px;
     }
+
+    /** TESTIMONIALS **/
+
+.testimonial {
+    min-height: 400px;
+}
+
+.testimonial > p {
+    padding: 40px;
+}
+
+.testimonial-author {
+    gap: 12px;
+    padding: 30px 40px;
+}
+
+.testimonial-author > img {
+    width: 60px;
+    height: 60px;
+}
+
+/**PRICING**/
+
+.pricing {
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.pricing-title {
+    font-size: 1.65rem;
+}
+
+.pricing-text {
+    margin-top: 40px;
+}
+
+.pricing-price {
+    margin-top: 40px;
+}
+
+.pricing-price > span {
+    font-size: 2.75rem;
+}
+
+.pricing-btn {
+    margin-top: 30px;
+}
+
     
 }
 
