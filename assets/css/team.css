@@ -33,13 +33,14 @@
 
 .team-group > label {
     padding: 12px 18px;
+    font-weight: 700;
+    border: 1px solid transparent;
     border-radius: 6px;
     cursor: pointer;
     text-wrap: nowrap;
 }
 
 .team-group > label:has(input:checked) {
-    font-weight: 700;
     border: 1px solid #356554;
     background: #234338;
 }
@@ -119,6 +120,7 @@
     
     .team-group {
         padding: 20px 80px;
+        justify-content: space-between;
     }
     
     .team-members {
@@ -176,5 +178,6 @@
         font-size: 1.135rem;
     }
 }
+
 
 
