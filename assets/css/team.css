@@ -1,0 +1,180 @@
+@import url(./main.css);
+
+.team {
+    text-align: center;
+    background: var(--bg-primary);
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.team > h2::before {
+    content: "";
+    display: block;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 30px;
+    background: url("../images/logo-style.png");
+}
+
+.team > p {
+    margin-top: 6px;
+}
+
+.team-group {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.team-group > label {
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.team-group > label:has(input:checked) {
+    font-weight: 700;
+    border: 1px solid #356554;
+    background: #234338;
+}
+
+.team-group input {
+    display: none;
+}
+
+.team-members {
+    margin-top: -47px;
+    width: 100%;
+}
+
+.member {
+    position: relative;
+    margin-top: 67px;
+}
+
+.member > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.member-info {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    background: var(--bg-primary);
+    padding: 20px;
+    border-radius: 0 20px 0 0;
+    width: 80%;
+}
+
+.member-info > h3 {
+    font-size: 1.425rem;
+    line-height: 28px;
+}
+
+.member-info > p {
+    font-size: 1.135rem;
+}
+
+.join-team {
+    margin-top: 95px;
+    padding: 40px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.join-team h2 {
+    font-size: 1.6rem;
+}
+
+.join-team p {
+    margin-top: 10px;
+}
+
+.join-team > .btn-primary {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .team {
+        padding: 80px;
+    }
+    
+    .team > h2::before {
+        margin-bottom: 60px;
+    }
+    
+    .team > p {
+        margin-top: 10px;
+    }
+    
+    .team-group {
+        padding: 20px 80px;
+    }
+    
+    .team-members {
+        display: flex;
+        gap: 10px;
+        margin-top: 40px;
+    }
+    
+    .member {
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    .member-info {
+        padding: 10px;
+    }
+    
+    .member-info > h3 {
+        font-size: 1.2rem;
+    }
+    
+    .member-info > p {
+        font-size: 1rem;
+    }
+    
+    .join-team {
+        text-align: left;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        gap: 150px;
+    }
+    
+    .join-team > .btn-primary {
+        min-width: 130px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .team-members {
+        gap: 20px;
+    }
+    
+    .member-info {
+        padding: 20px;
+        border-radius: 0 20px 0 0;
+    }
+    
+    .member-info > h3 {
+        font-size: 1.25rem;
+    }
+    
+    .member-info > p {
+        font-size: 1.135rem;
+    }
+}
+
+
