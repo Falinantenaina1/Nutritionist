@@ -71,9 +71,9 @@ h3 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 25px 16px;
     color: var(--menu);
     background: var(--secondary);
-    padding: 20px 16px;
     border-bottom: 2px solid var(--border);
     z-index: 1000;
 }
