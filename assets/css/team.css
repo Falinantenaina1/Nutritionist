@@ -38,6 +38,7 @@
     border-radius: 6px;
     cursor: pointer;
     text-wrap: nowrap;
+    
 }
 
 .team-group > label:has(input:checked) {
