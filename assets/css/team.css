@@ -1,25 +1,5 @@
 @import url(./main.css);
 
-.team {
-    text-align: center;
-    background: var(--bg-primary);
-    padding: 30px;
-    border-radius: 10px 10px 0 0;
-}
-
-.team > h2::before {
-    content: "";
-    display: block;
-    width: 68px;
-    height: 68px;
-    margin: 0 auto 30px;
-    background: url("../images/logo-style.png");
-}
-
-.team > p {
-    margin-top: 6px;
-}
-
 .team-group {
     background: var(--secondary);
     color: var(--white);
@@ -107,18 +87,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .team {
-        padding: 80px;
-    }
-    
-    .team > h2::before {
-        margin-bottom: 60px;
-    }
-    
-    .team > p {
-        margin-top: 10px;
-    }
-    
+
     .team-group {
         padding: 20px 80px;
         justify-content: space-between;

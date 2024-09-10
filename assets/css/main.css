@@ -152,6 +152,27 @@ main {
     width: 100%;
 }
 
+.banniere {
+    text-align: center;
+    background: var(--bg-primary);
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.banniere > h2::before {
+    content: "";
+    display: block;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 30px;
+    background: url("../images/logo-style.png");
+}
+
+.banniere > p {
+    margin-top: 6px;
+}
+
+
 .hero-img {
     width: 100%;
 }
@@ -576,6 +597,19 @@ section:not(.hero-section) {
 main {
     margin-top: 91px;
 }
+
+.banniere {
+    padding: 80px;
+}
+
+.banniere > h2::before {
+    margin-bottom: 60px;
+}
+
+.banniere > p {
+    margin-top: 10px;
+}
+
 
 .hero-section {
     display: grid;
