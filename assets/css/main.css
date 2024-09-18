@@ -9,7 +9,9 @@
     --primary: #CBEA7B;
     --secondary: #1A3129;
     --bg-primary: #F6FBE9;
+    --bg-secondary: #234338;
     --border: #E5F5BD;
+    --border-secondary: #2C5446;
     --heading: #262626;
     --text: #333333;
     --menu: #FAFDF2;
@@ -170,6 +172,14 @@ main {
 
 .banniere > p {
     margin-top: 6px;
+}
+
+.banniere-end{
+    background: var(--secondary);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: auto;
 }
 
 
@@ -478,8 +488,8 @@ section:not(.hero-section) {
 .footer-content {
     margin-top: 30px;
     padding: 20px;
-    background: #234338;
-    border: 1px solid #2C5446;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-secondary);
     border-radius: 8px;
 }
 
@@ -608,6 +618,11 @@ main {
 
 .banniere > p {
     margin-top: 10px;
+}
+
+.banniere-end {
+    padding: 20px 80px;
+    justify-content: space-between;
 }
 
 

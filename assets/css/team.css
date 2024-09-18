@@ -1,14 +1,9 @@
 @import url(./main.css);
 
 .team-group {
-    background: var(--secondary);
-    color: var(--white);
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    overflow: scroll;
 }
 
 .team-group > label {
@@ -22,8 +17,8 @@
 }
 
 .team-group > label:has(input:checked) {
-    border: 1px solid #356554;
-    background: #234338;
+    border: 1px solid var(--border-secondary);
+    background: var(--bg-secondary);
 }
 
 .team-group input {
@@ -87,14 +82,10 @@
 }
 
 @media screen and (min-width: 1024px) {
-
-    .team-group {
-        padding: 20px 80px;
-        justify-content: space-between;
-    }
     
     .team-members {
         display: flex;
+        justify-content: space-between;
         gap: 10px;
         margin-top: 40px;
     }

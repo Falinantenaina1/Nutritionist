@@ -1,1 +1,120 @@
 @import url(./main.css);
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info {
+    display: block;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 6px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-info > div {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label, .form-group > input, .form-group > textarea {
+    display: block;
+    font-size: 16px;
+}
+
+.form-group > label {
+    font-weight: 600;
+    color: #4C4C4C;
+}
+
+.form-group > input, .form-group > textarea {
+    background: #EEF8D3;
+    color: #656567;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 8px;
+    padding: 20px;
+}
+
+.form-group > input:focus, .form-group > textarea:focus {
+    outline: none;
+}
+
+.btn-primary.submit {
+    width: 100%;
+    color: var(--heading);
+    font-size: 14px;
+}
+
+.contact-link {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.map > img {
+    display: block;
+    width: 100%;
+}
+
+.social-link {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background: var(--primary);
+    border-radius: 6px;
+    margin: 0 7px;
+    padding: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .contact-form {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .contact-form > div {
+        width: 100%;
+    }
+
+    .contact-link {
+        align-items: flex-end;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .contact {
+        gap: 40px;
+    }
+}
